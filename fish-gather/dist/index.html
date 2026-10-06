@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2d">
+  <title>푸른 바다 · 물고기 모션</title>
+  <meta name="description" content="마우스와 손끝을 따라 물고기들이 모이는 수중 풍경.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23071b2d'/%3E%3Cpath d='M6 17q5-10 14-4l6-5v16l-6-5q-9 6-14-2' fill='%23efd580'/%3E%3Ccircle cx='10' cy='16' r='1.4' fill='%23071b2d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="ocean" tabindex="0" aria-label="물고기가 모이는 수중 배경화면. 마우스나 방향키로 움직이고 스페이스 키로 움직임을 멈추거나 재생할 수 있습니다.">
+    <img class="landscape" src="assets/background.webp" alt="햇살이 수면을 지나 산호와 바위 위로 내려오는 푸른 바다">
+    <div class="water-light" aria-hidden="true"></div>
+    <canvas id="life" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
